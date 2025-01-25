@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Packages Section */
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.package-card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 800px; /* Adjust as per your layout */
+    margin-bottom: 20px;
+}
+
+/* Left Side - Package Image */
+.package-image {
+    flex: 1;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Right Side - Package Details */
+.package-details {
+    flex: 2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.package-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.package-details p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.package-details p strong {
+    color: #007bff;
+}
+
+/* Buttons Section */
+.package-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.package-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.package-buttons button:first-child {
+    background-color: #ff8411;
+}
+
+.package-buttons button:first-child:hover {
+    background-color: #fa2a06;
+}
+
+.package-buttons button:last-child {
+    background-color: #28a745;
+}
+
+.package-buttons button:last-child:hover {
+    background-color: #218838;
+}

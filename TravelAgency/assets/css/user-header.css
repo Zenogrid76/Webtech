@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    color: white;
+    padding: 5px 10px 5px 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(239, 238, 238, 0.9);
+    box-shadow: 0 2px 4px rgba(47, 47, 47, 0.2);
+}
+
+/* Logo Section */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #fead32;
+    color: #e7e7e7;
+}
+
+/* Profile and Logout Section */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info .user-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid rgb(163, 255, 249);
+    object-fit: cover;
+}
+
+.user-info .logout-btn {
+    background-color: white;
+    color: #fead32;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 2px solid #fead32;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.user-info .logout-btn:hover {
+    background-color: #fead32;
+    color: white;
+    border-color: while;
+}

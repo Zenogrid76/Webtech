@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../../assets/Images/manage-package.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+}
+
+main {
+    max-width: 1200px;
+    margin: 00px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* White overlay */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Table Section */
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    position: top;
+    top: 0;
+}
+
+.package-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Form Section */
+#add-edit-package .form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: blueviolet;
+    cursor: pointer;
+    transition: opacity 0.3s;
+   
+}
+
+button.edit-btn {
+    background-color: #ffc107;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+
+button#submit-button {
+    background-color: #28a745;
+}
+
+button#clear-button {
+    background-color: #007bff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
